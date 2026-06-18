@@ -4,11 +4,11 @@ A multi-page website for a fictional South African non-profit digital skills org
 
 ## Live Site
 
-> _(Deploy URL to be added here after deployment)_
+
 
 ## GitHub Repository
 
-> _(Repository URL to be added here)_
+
 
 ---
 
