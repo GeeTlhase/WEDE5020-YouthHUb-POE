@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Support YouthTech Skills Hub with a donation. Your contribution funds digital skills training for unemployed South African youth.">
+  <meta name="keywords" content="donate, support, NPO, non-profit donation, South Africa, youth funding, CSI">
+  <meta name="robots" content="index, follow">
+
+  <title>YouthTech Skills Hub | Donate</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">YouthTech Skills Hub</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <div class="search">
+        <input type="search" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section id="page-header">
+      <h1>Support YouthTech Skills Hub</h1>
+      <p>Your donation directly funds digital skills training for young South Africans, helping them build careers and break the cycle of unemployment.</p>
+    </section>
+
+    <!-- Why Donate -->
+    <section id="why-donate">
+      <h2>Why Your Support Matters</h2>
+      <p>South Africa faces one of the highest youth unemployment rates in the world. By donating to YouthTech Skills Hub, you are directly investing in the future of our country's young people. Every rand raised goes towards course materials, qualified instructors, device access programmes, and learner support services.</p>
+
+      <ul>
+        <li><strong>R 500</strong> covers learning materials for one student for an entire course.</li>
+        <li><strong>R 1,500</strong> provides a student with a loaner laptop for the duration of their programme.</li>
+        <li><strong>R 5,000</strong> fully sponsors one student's enrolment — from application through to graduation.</li>
+        <li><strong>R 22,000</strong> funds a full cohort of 20 students for one short course.</li>
+      </ul>
+    </section>
+
+    <!-- Donation Form -->
+    <section id="donation-form">
+      <h2>Make a Donation</h2>
+      <p>Donations are processed securely through PayFast or Yoco. You will receive a receipt via email upon successful payment.</p>
+
+      <form action="#" method="post">
+
+        <!-- Donation Type -->
+        <fieldset>
+          <legend>Donation Type</legend>
+
+          <div class="form-group">
+            <input type="radio" id="once-off" name="donation_type" value="once-off" checked>
+            <label for="once-off">Once-off Donation</label>
+          </div>
+
+          <div class="form-group">
+            <input type="radio" id="recurring" name="donation_type" value="recurring">
+            <label for="recurring">Recurring Monthly Donation</label>
+          </div>
+        </fieldset>
+
+        <!-- Donation Amount -->
+        <fieldset>
+          <legend>Donation Amount (ZAR)</legend>
+
+          <div class="form-group">
+            <input type="radio" id="amount-100" name="donation_amount" value="100">
+            <label for="amount-100">R 100</label>
+          </div>
+
+          <div class="form-group">
+            <input type="radio" id="amount-500" name="donation_amount" value="500">
+            <label for="amount-500">R 500</label>
+          </div>
+
+          <div class="form-group">
+            <input type="radio" id="amount-1500" name="donation_amount" value="1500">
+            <label for="amount-1500">R 1,500</label>
+          </div>
+
+          <div class="form-group">
+            <input type="radio" id="amount-5000" name="donation_amount" value="5000">
+            <label for="amount-5000">R 5,000</label>
+          </div>
+
+          <div class="form-group">
+            <input type="radio" id="amount-custom" name="donation_amount" value="custom">
+            <label for="amount-custom">Other Amount</label>
+          </div>
+
+          <div class="form-group" id="custom-amount-group">
+            <label for="custom-amount">Enter Custom Amount (ZAR)</label>
+            <input type="number" id="custom-amount" name="custom_amount" min="10" step="1" placeholder="e.g. 250">
+          </div>
+        </fieldset>
+
+        <!-- Recurring Frequency (shown when recurring is selected) -->
+        <fieldset id="recurring-options">
+          <legend>Recurring Frequency</legend>
+          <div class="form-group">
+            <label for="frequency">Debit my card</label>
+            <select id="frequency" name="frequency">
+              <option value="monthly">Monthly</option>
+              <option value="quarterly">Quarterly (every 3 months)</option>
+              <option value="annually">Annually</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Donor Details -->
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <div class="form-group">
+            <label for="donor-first-name">First Name <span aria-label="required">*</span></label>
+            <input type="text" id="donor-first-name" name="first_name" placeholder="e.g. Jane" required>
+          </div>
+
+          <div class="form-group">
+            <label for="donor-last-name">Last Name <span aria-label="required">*</span></label>
+            <input type="text" id="donor-last-name" name="last_name" placeholder="e.g. Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="donor-email">Email Address <span aria-label="required">*</span></label>
+            <input type="email" id="donor-email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="donor-phone">Phone Number (optional)</label>
+            <input type="tel" id="donor-phone" name="phone" placeholder="e.g. 071 234 5678">
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" id="anonymous" name="anonymous">
+            <label for="anonymous">I wish to remain anonymous (my name will not be displayed publicly)</label>
+          </div>
+        </fieldset>
+
+        <!-- Payment Method -->
+        <fieldset>
+          <legend>Payment Method</legend>
+
+          <div class="form-group">
+            <input type="radio" id="payfast" name="payment_method" value="payfast" checked>
+            <label for="payfast">PayFast (Credit/Debit Card, EFT, Instant EFT)</label>
+          </div>
+
+          <div class="form-group">
+            <input type="radio" id="yoco" name="payment_method" value="yoco">
+            <label for="yoco">Yoco (Credit/Debit Card)</label>
+          </div>
+        </fieldset>
+
+        <!-- Consent -->
+        <fieldset>
+          <legend>Consent</legend>
+          <div class="form-group">
+            <input type="checkbox" id="donate-consent" name="consent" required>
+            <label for="donate-consent">I consent to YouthTech Skills Hub processing my personal information for donation administration purposes, in accordance with POPIA. <span aria-label="required">*</span></label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="updates-consent" name="updates_consent">
+            <label for="updates-consent">I would like to receive updates about the impact of my donation and news from YouthTech Skills Hub.</label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Proceed to Secure Payment</button>
+        </div>
+        <div class="form-success-msg" id="donate-success">
+          &#10003; Thank you! You are being redirected to secure payment.
+        </div>
+
+        <p class="secure-note">All transactions are encrypted and processed securely. YouthTech Skills Hub does not store your card details.</p>
+
+      </form>
+    </section>
+
+    <!-- Give in Other Ways -->
+    <section id="other-ways">
+      <h2>Other Ways to Give</h2>
+
+      <article>
+        <h3>Corporate Sponsorship</h3>
+        <p>Partner with us as a corporate sponsor. We offer naming rights for cohorts, branded materials, and CSI reporting support. Contact us at <a href="mailto:partnerships@youthtechskillshub.org.za">partnerships@youthtechskillshub.org.za</a> to discuss sponsorship packages.</p>
+      </article>
+
+      <article>
+        <h3>Donate Equipment</h3>
+        <p>We gratefully accept donations of laptops, tablets, and other functional devices. Donated equipment goes directly to learners who do not have access to their own devices. Contact us to arrange a device drop-off or collection.</p>
+      </article>
+
+      <article>
+        <h3>Volunteer Your Skills</h3>
+        <p>Industry professionals can contribute by volunteering as guest lecturers, mentors, or curriculum advisors. If you have expertise in a digital field and a passion for youth development, we would love to hear from you.</p>
+        <a href="mailto:volunteer@youthtechskillshub.org.za">Get in Touch</a>
+      </article>
+
+      <article>
+        <h3>Bank Transfer (EFT)</h3>
+        <p>You may also make a direct EFT to our organisation bank account:</p>
+        <ul>
+          <li><strong>Bank:</strong> First National Bank (FNB)</li>
+          <li><strong>Account Name:</strong> YouthTech Skills Hub NPC</li>
+          <li><strong>Account Number:</strong> 000 000 0000</li>
+          <li><strong>Branch Code:</strong> 250 655</li>
+          <li><strong>Reference:</strong> DONATE-[Your Name]</li>
+        </ul>
+        <p>Please email your proof of payment to <a href="mailto:finance@youthtechskillshub.org.za">finance@youthtechskillshub.org.za</a> to receive your receipt.</p>
+      </article>
+    </section>
+
+    <!-- Impact / Transparency -->
+    <section id="transparency">
+      <h2>How We Use Your Donation</h2>
+      <p>We are committed to full financial transparency. Below is how every rand donated is allocated:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Allocation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Programme delivery (instruction, materials, facilities)</td>
+            <td>65%</td>
+          </tr>
+          <tr>
+            <td>Learner support (devices, data, transport grants)</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>Operations and administration</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>Fundraising and communications</td>
+            <td>5%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>YouthTech Skills Hub is a registered non-profit organisation (NPO). Donations may qualify for Section 18A tax deductibility. Please contact us for a formal receipt.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@youthtechskillshub.org.za</p>
+      <p>Phone: +27 64 471 0729</p>
+      <p>Address: 14 Albert Street, Johannesburg, Gauteng, South Africa</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2025 YouthTech Skills Hub. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Part 3: Donate page JS validation + conditional fields -->
+  <script>
+    const donateForm = document.querySelector('#donation-form form');
+
+    // Show/hide custom amount field
+    document.querySelectorAll('[name="donation_amount"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        document.getElementById('custom-amount-group').style.display =
+          radio.value === 'custom' ? 'flex' : 'none';
+      });
+    });
+
+    // Show/hide recurring options
+    document.querySelectorAll('[name="donation_type"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        document.getElementById('recurring-options').style.display =
+          radio.value === 'recurring' ? 'block' : 'none';
+      });
+    });
+    // Initial state
+    document.getElementById('recurring-options').style.display = 'none';
+
+    // Helpers
+    function setError(input, msg) {
+      input.classList.add('invalid'); input.classList.remove('valid');
+      let err = input.parentElement.querySelector('.field-error');
+      if (!err) { err = document.createElement('span'); err.className = 'field-error'; input.parentElement.appendChild(err); }
+      err.textContent = msg; err.classList.add('visible');
+    }
+    function clearError(input) {
+      input.classList.remove('invalid'); input.classList.add('valid');
+      const err = input.parentElement.querySelector('.field-error');
+      if (err) err.classList.remove('visible');
+    }
+
+    donateForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let valid = true;
+
+      // Check donation amount selected
+      const amountSelected = [...document.querySelectorAll('[name="donation_amount"]')].some(r => r.checked);
+      if (!amountSelected) {
+        const amountFieldset = document.querySelectorAll('fieldset')[1];
+        let err = amountFieldset.querySelector('.field-error');
+        if (!err) { err = document.createElement('span'); err.className = 'field-error'; amountFieldset.appendChild(err); }
+        err.textContent = 'Please select a donation amount.';
+        err.classList.add('visible');
+        valid = false;
+      }
+
+      // Custom amount validation
+      const customSelected = document.getElementById('amount-custom').checked;
+      if (customSelected) {
+        const customInput = document.getElementById('custom-amount');
+        if (!customInput.value || +customInput.value < 10) { setError(customInput, 'Please enter an amount of at least R 10.'); valid = false; } else clearError(customInput);
+      }
+
+      // Donor details
+      const fname = donateForm.querySelector('[name="first_name"]');
+      const lname = donateForm.querySelector('[name="last_name"]');
+      const email = donateForm.querySelector('[name="email"]');
+
+      if (!fname.value.trim()) { setError(fname, 'First name is required.'); valid = false; } else clearError(fname);
+      if (!lname.value.trim()) { setError(lname, 'Last name is required.'); valid = false; } else clearError(lname);
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) { setError(email, 'Please enter a valid email address.'); valid = false; } else clearError(email);
+
+      // Consent
+      const consent = document.getElementById('donate-consent');
+      if (!consent.checked) { setError(consent, 'You must consent to proceed.'); valid = false; } else clearError(consent);
+
+      if (!valid) { donateForm.querySelector('.invalid')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+
+      const btn = donateForm.querySelector('button[type="submit"]');
+      btn.textContent = 'Processing…';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('donate-success').classList.add('visible');
+        btn.textContent = 'Proceed to Secure Payment';
+        btn.disabled = false;
+        document.getElementById('donate-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 1200);
+    });
+  </script>
+</body>
+</html>

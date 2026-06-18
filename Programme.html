@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Explore YouthTech Skills Hub digital skills programmes — web development, digital marketing, data analysis, IT support, and graphic design courses in South Africa.">
+  <meta name="keywords" content="digital skills courses, web development training, IT support course, data analysis, digital marketing, South Africa, free courses">
+  <meta name="robots" content="index, follow">
+
+  <title>YouthTech Skills Hub | Programmes</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">YouthTech Skills Hub</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <div class="search">
+        <input type="search" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section id="page-header">
+      <h1>Our Programmes</h1>
+      <p>Practical, industry-aligned digital skills courses designed to get you employment-ready.</p>
+    </section>
+
+    <!-- Programmes Introduction -->
+    <section id="intro">
+      <p>All YouthTech Skills Hub programmes are designed in collaboration with industry partners to ensure that what you learn directly matches what employers need. Courses range from beginner to intermediate level and are offered both in-person and online.</p>
+      <a href="register.html">Apply for a Programme</a>
+    </section>
+
+    <!-- Course Listing with Filter + Accordion (JS Part 3) -->
+    <section id="course-listing">
+      <h2>Available Courses</h2>
+
+      <!-- Filter bar -->
+      <div class="filter-bar">
+        <input type="search" id="course-search" placeholder="Search courses..." aria-label="Search courses">
+        <select id="level-filter" aria-label="Filter by level">
+          <option value="">All Levels</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+        </select>
+      </div>
+
+      <div id="accordion-courses">
+
+        <button class="accordion-btn" data-level="beginner" data-name="web development fundamentals">
+          Web Development Fundamentals <span style="font-size:0.8rem;font-weight:400;margin-left:0.5rem;">Beginner · 8 Weeks</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Learn the building blocks of the web: HTML, CSS, and introductory JavaScript. By the end of this course, you will be able to build and publish your own responsive websites.</p>
+          <ul>
+            <li>HTML5 structure and semantics</li>
+            <li>CSS layout and styling</li>
+            <li>Introduction to JavaScript</li>
+            <li>Responsive design principles</li>
+          </ul>
+          <a href="register.html" style="margin-top:0.5rem;display:inline-block;">Apply Now</a>
+        </div>
+
+        <button class="accordion-btn" data-level="beginner intermediate" data-name="digital marketing essentials">
+          Digital Marketing Essentials <span style="font-size:0.8rem;font-weight:400;margin-left:0.5rem;">Beginner–Intermediate · 6 Weeks</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Gain hands-on skills in social media marketing, SEO, email campaigns, and content creation. Ideal for aspiring entrepreneurs and marketing professionals.</p>
+          <ul>
+            <li>Social media strategy and management</li>
+            <li>Search Engine Optimisation (SEO)</li>
+            <li>Google Analytics fundamentals</li>
+            <li>Email marketing campaigns</li>
+          </ul>
+          <a href="register.html" style="margin-top:0.5rem;display:inline-block;">Apply Now</a>
+        </div>
+
+        <button class="accordion-btn" data-level="intermediate" data-name="data analysis excel python">
+          Data Analysis with Excel and Python <span style="font-size:0.8rem;font-weight:400;margin-left:0.5rem;">Intermediate · 10 Weeks</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Develop valuable analytical skills using industry-standard tools. Learn to collect, clean, and visualise data to help businesses make better decisions.</p>
+          <ul>
+            <li>Advanced Microsoft Excel</li>
+            <li>Introduction to Python for data analysis</li>
+            <li>Data visualisation with charts and dashboards</li>
+            <li>Practical data project work</li>
+          </ul>
+          <a href="register.html" style="margin-top:0.5rem;display:inline-block;">Apply Now</a>
+        </div>
+
+        <button class="accordion-btn" data-level="beginner" data-name="it support networking basics">
+          IT Support and Networking Basics <span style="font-size:0.8rem;font-weight:400;margin-left:0.5rem;">Beginner · 6 Weeks</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Prepare for entry-level IT support roles by learning essential troubleshooting skills, hardware basics, and networking fundamentals.</p>
+          <ul>
+            <li>Computer hardware and operating systems</li>
+            <li>Network setup and troubleshooting</li>
+            <li>Cybersecurity awareness</li>
+            <li>Customer service for IT professionals</li>
+          </ul>
+          <a href="register.html" style="margin-top:0.5rem;display:inline-block;">Apply Now</a>
+        </div>
+
+        <button class="accordion-btn" data-level="beginner intermediate" data-name="graphic design digital media">
+          Graphic Design for Digital Media <span style="font-size:0.8rem;font-weight:400;margin-left:0.5rem;">Beginner–Intermediate · 8 Weeks</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Learn the principles of visual design and use industry tools to create professional graphics for social media, websites, and marketing materials.</p>
+          <ul>
+            <li>Design principles: colour, typography, and layout</li>
+            <li>Adobe Photoshop and Canva</li>
+            <li>Social media graphic design</li>
+            <li>Portfolio development</li>
+          </ul>
+          <a href="register.html" style="margin-top:0.5rem;display:inline-block;">Apply Now</a>
+        </div>
+
+        <p class="no-results" id="no-results" style="display:none;">No courses match your search.</p>
+      </div>
+    </section>
+
+    <!-- Upcoming Schedule -->
+    <section id="schedule">
+      <h2>Upcoming Schedule</h2>
+      <p>New cohorts begin every quarter. Check the table below for upcoming intake dates.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Programme</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Mode</th>
+            <th>Spaces Available</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development Fundamentals</td>
+            <td>4 August 2025</td>
+            <td>26 September 2025</td>
+            <td>In-Person & Online</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Digital Marketing Essentials</td>
+            <td>11 August 2025</td>
+            <td>19 September 2025</td>
+            <td>Online</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Data Analysis with Excel and Python</td>
+            <td>18 August 2025</td>
+            <td>24 October 2025</td>
+            <td>In-Person</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>IT Support and Networking Basics</td>
+            <td>1 September 2025</td>
+            <td>10 October 2025</td>
+            <td>Online</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Graphic Design for Digital Media</td>
+            <td>8 September 2025</td>
+            <td>31 October 2025</td>
+            <td>In-Person & Online</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Eligibility -->
+    <section id="eligibility">
+      <h2>Who Can Apply?</h2>
+      <ul>
+        <li>South African citizens or permanent residents</li>
+        <li>Aged 18 to 35 years</li>
+        <li>Minimum Grade 10 (or equivalent) education</li>
+        <li>Basic literacy in English</li>
+        <li>Access to a computer or mobile device (loaner devices available for those without)</li>
+      </ul>
+      <p>Some intermediate programmes may have additional prerequisites. These are listed on each course description above.</p>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <h2>Ready to Get Started?</h2>
+      <p>Take the first step towards a digital career. Apply online today — it only takes a few minutes.</p>
+      <a href="register.html">Apply Now</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@youthtechskillshub.org.za</p>
+      <p>Phone: +27 64 471 0729</p>
+      <p>Address: 14 Albert Street, Johannesburg, Gauteng, South Africa</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2025 YouthTech Skills Hub. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Part 3: Accordion + Filter JS -->
+  <script>
+    // Accordion
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const panel = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.accordion-btn').forEach(b => {
+          b.classList.remove('open');
+          b.nextElementSibling.classList.remove('open');
+        });
+        if (!isOpen) {
+          btn.classList.add('open');
+          panel.classList.add('open');
+        }
+      });
+    });
+
+    // Search + Level filter
+    function filterCourses() {
+      const query = document.getElementById('course-search').value.toLowerCase();
+      const level = document.getElementById('level-filter').value.toLowerCase();
+      const btns = document.querySelectorAll('.accordion-btn');
+      let visible = 0;
+      btns.forEach(btn => {
+        const name = btn.dataset.name || '';
+        const btnLevel = btn.dataset.level || '';
+        const matchName = name.includes(query);
+        const matchLevel = !level || btnLevel.includes(level);
+        const show = matchName && matchLevel;
+        btn.style.display = show ? '' : 'none';
+        btn.nextElementSibling.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+    }
+    document.getElementById('course-search').addEventListener('input', filterCourses);
+    document.getElementById('level-filter').addEventListener('change', filterCourses);
+
+    // Fade-in on scroll
+    const fadeEls = document.querySelectorAll('section, .course, article');
+    fadeEls.forEach(el => el.classList.add('fade-in'));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

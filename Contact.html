@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Contact YouthTech Skills Hub — send us a general message, feedback or question. We will get back to you within 2 business days.">
+  <meta name="keywords" content="contact, get in touch, message, feedback, YouthTech Skills Hub, Johannesburg">
+  <meta name="robots" content="index, follow">
+  <title>YouthTech Skills Hub | Contact Us</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">YouthTech Skills Hub</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <div class="search">
+        <input type="search" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section id="page-header">
+      <h1>Contact Us</h1>
+      <p>Send us a general message, feedback, or question. Once validated, your message will be compiled into an email you can send directly to our team.</p>
+    </section>
+
+    <!-- Contact Details -->
+    <section id="contact-details">
+      <h2>Get in Touch</h2>
+      <p>You can reach us through the form below, or via any of the direct channels listed here. We aim to respond within 2 business days.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:1.5rem;">
+        <article>
+          <h3>General Enquiries</h3>
+          <p>Email: <a href="mailto:info@youthtechskillshub.org.za">info@youthtechskillshub.org.za</a></p>
+          <p>Phone: +27 64 471 0729</p>
+          <p>Hours: Monday – Friday, 08:00 – 17:00</p>
+        </article>
+        <article>
+          <h3>Admissions</h3>
+          <p>Email: <a href="mailto:admissions@youthtechskillshub.org.za">admissions@youthtechskillshub.org.za</a></p>
+          <p>Phone: +27 73 769 7562</p>
+        </article>
+        <article>
+          <h3>Partnerships &amp; Donations</h3>
+          <p>Email: <a href="mailto:partnerships@youthtechskillshub.org.za">partnerships@youthtechskillshub.org.za</a></p>
+          <p>Email: <a href="mailto:finance@youthtechskillshub.org.za">finance@youthtechskillshub.org.za</a></p>
+        </article>
+        <article>
+          <h3>Our Address</h3>
+          <p>14 Albert Street<br>Johannesburg<br>Gauteng, 2001<br>South Africa</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <p>Complete the form below. Once validated, click <strong>Compose Email</strong> to open your email client with the message pre-filled and ready to send.</p>
+
+      <form id="main-contact-form" action="#" method="post" novalidate>
+
+        <!-- Your Details -->
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <div class="form-group">
+            <label for="con-first-name">First Name <span aria-label="required">*</span></label>
+            <input type="text" id="con-first-name" name="first_name" placeholder="e.g. Lerato" required>
+            <span class="field-error" id="err-con-fn"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="con-last-name">Last Name <span aria-label="required">*</span></label>
+            <input type="text" id="con-last-name" name="last_name" placeholder="e.g. Molefe" required>
+            <span class="field-error" id="err-con-ln"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="con-email">Email Address <span aria-label="required">*</span></label>
+            <input type="email" id="con-email" name="email" placeholder="your@email.com" required>
+            <span class="field-error" id="err-con-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="con-phone">Phone Number (optional)</label>
+            <input type="tel" id="con-phone" name="phone" placeholder="e.g. 071 234 5678">
+            <span class="field-error" id="err-con-phone"></span>
+          </div>
+        </fieldset>
+
+        <!-- Message Details -->
+        <fieldset>
+          <legend>Your Message</legend>
+
+          <div class="form-group">
+            <label for="con-message-type">Type of Message <span aria-label="required">*</span></label>
+            <select id="con-message-type" name="message_type" required>
+              <option value="">-- Select a type --</option>
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Programme Information">Programme Information Request</option>
+              <option value="Feedback">Feedback or Suggestion</option>
+              <option value="Complaint">Complaint</option>
+              <option value="Media or Press">Media / Press Enquiry</option>
+              <option value="Partnership">Partnership Opportunity</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="field-error" id="err-con-type"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="con-subject">Subject <span aria-label="required">*</span></label>
+            <input type="text" id="con-subject" name="subject" placeholder="e.g. Enquiry about Web Development course" required maxlength="100">
+            <span class="field-error" id="err-con-subject"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="con-message">Full Message <span aria-label="required">*</span></label>
+            <textarea id="con-message" name="message" rows="7" placeholder="Type your full message here..." required maxlength="2000"></textarea>
+            <span class="field-error" id="err-con-msg"></span>
+            <small id="con-char-count" style="color:var(--clr-mid);font-size:0.8rem;">0 / 2000 characters</small>
+          </div>
+        </fieldset>
+
+        <!-- Recipient -->
+        <fieldset>
+          <legend>Send Message To <span aria-label="required">*</span></legend>
+          <div class="form-group">
+            <input type="radio" id="rec-general" name="recipient" value="info@youthtechskillshub.org.za" checked>
+            <label for="rec-general">General Team (info@youthtechskillshub.org.za)</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" id="rec-admissions" name="recipient" value="admissions@youthtechskillshub.org.za">
+            <label for="rec-admissions">Admissions (admissions@youthtechskillshub.org.za)</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" id="rec-partnerships" name="recipient" value="partnerships@youthtechskillshub.org.za">
+            <label for="rec-partnerships">Partnerships (partnerships@youthtechskillshub.org.za)</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" id="rec-finance" name="recipient" value="finance@youthtechskillshub.org.za">
+            <label for="rec-finance">Finance (finance@youthtechskillshub.org.za)</label>
+          </div>
+        </fieldset>
+
+        <!-- Consent -->
+        <fieldset>
+          <legend>Consent</legend>
+          <div class="form-group">
+            <input type="checkbox" id="con-consent" name="consent" required>
+            <label for="con-consent">I consent to YouthTech Skills Hub processing my personal information for the purposes of handling this message, in accordance with POPIA. <span aria-label="required">*</span></label>
+            <span class="field-error" id="err-con-consent"></span>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" id="con-submit-btn">Validate &amp; Compose Email</button>
+          <button type="reset">Clear Form</button>
+        </div>
+
+        <p style="font-size:0.85rem;color:var(--clr-mid);margin-top:1rem;">
+          After validation your email client will open with the message pre-filled. Review and click Send in your email client to deliver the message.
+        </p>
+
+      </form>
+
+      <!-- Preview box (shown after validation) -->
+      <div id="email-preview" style="display:none;margin-top:2rem;background:var(--clr-white);border:1px solid var(--clr-border);border-radius:var(--radius);padding:1.5rem;">
+        <h3 style="color:var(--clr-primary);margin-bottom:1rem;">&#10003; Message validated — preview below</h3>
+        <table style="width:100%;font-size:0.875rem;border-collapse:collapse;">
+          <tr><td style="padding:6px 0;color:var(--clr-mid);width:90px;vertical-align:top;"><strong>To:</strong></td><td id="prev-to" style="padding:6px 0;"></td></tr>
+          <tr><td style="padding:6px 0;color:var(--clr-mid);vertical-align:top;"><strong>From:</strong></td><td id="prev-from" style="padding:6px 0;"></td></tr>
+          <tr><td style="padding:6px 0;color:var(--clr-mid);vertical-align:top;"><strong>Subject:</strong></td><td id="prev-subject" style="padding:6px 0;font-weight:600;"></td></tr>
+          <tr><td style="padding:6px 0;color:var(--clr-mid);vertical-align:top;"><strong>Message:</strong></td><td id="prev-message" style="padding:6px 0;white-space:pre-wrap;"></td></tr>
+        </table>
+        <div style="margin-top:1.5rem;">
+          <a id="send-email-link" href="#" style="display:inline-block;padding:0.75rem 1.8rem;background:var(--clr-primary);color:white;border-radius:var(--radius);font-weight:700;text-decoration:none;">
+            Open in Email Client &amp; Send
+          </a>
+          <button onclick="document.getElementById('email-preview').style.display='none';" style="margin-left:1rem;padding:0.75rem 1.5rem;background:var(--clr-border);border:none;border-radius:var(--radius);cursor:pointer;font-weight:700;">Edit Message</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@youthtechskillshub.org.za</p>
+      <p>Phone: +27 64 471 0729</p>
+      <p>Address: 14 Albert Street, Johannesburg, Gauteng, South Africa</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2025 YouthTech Skills Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- Part 3: Contact form JS validation + mailto compilation -->
+  <script>
+    const form = document.getElementById('main-contact-form');
+
+    // Character counter
+    const msgArea = document.getElementById('con-message');
+    const charCount = document.getElementById('con-char-count');
+    msgArea.addEventListener('input', () => {
+      charCount.textContent = msgArea.value.length + ' / 2000 characters';
+    });
+
+    // Error helpers
+    function showError(id, msg) {
+      const el = document.getElementById(id);
+      if (el) { el.textContent = msg; el.classList.add('visible'); }
+    }
+    function hideError(id) {
+      const el = document.getElementById(id);
+      if (el) { el.textContent = ''; el.classList.remove('visible'); }
+    }
+    function markInvalid(input) { input.classList.add('invalid'); input.classList.remove('valid'); }
+    function markValid(input)   { input.classList.remove('invalid'); input.classList.add('valid'); }
+
+    // Live validation
+    document.getElementById('con-first-name').addEventListener('blur', function() {
+      if (this.value.trim().length < 2) { showError('err-con-fn','First name must be at least 2 characters.'); markInvalid(this); }
+      else { hideError('err-con-fn'); markValid(this); }
+    });
+    document.getElementById('con-last-name').addEventListener('blur', function() {
+      if (this.value.trim().length < 2) { showError('err-con-ln','Last name must be at least 2 characters.'); markInvalid(this); }
+      else { hideError('err-con-ln'); markValid(this); }
+    });
+    document.getElementById('con-email').addEventListener('blur', function() {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.value)) { showError('err-con-email','Please enter a valid email address.'); markInvalid(this); }
+      else { hideError('err-con-email'); markValid(this); }
+    });
+    document.getElementById('con-phone').addEventListener('blur', function() {
+      if (this.value && !/^[0-9+\s()-]{10,15}$/.test(this.value)) { showError('err-con-phone','Phone must be 10–15 digits if provided.'); markInvalid(this); }
+      else { hideError('err-con-phone'); if (this.value) markValid(this); }
+    });
+    document.getElementById('con-message-type').addEventListener('change', function() {
+      if (!this.value) { showError('err-con-type','Please select a message type.'); markInvalid(this); }
+      else { hideError('err-con-type'); markValid(this); }
+    });
+    document.getElementById('con-subject').addEventListener('blur', function() {
+      if (this.value.trim().length < 5) { showError('err-con-subject','Subject must be at least 5 characters.'); markInvalid(this); }
+      else { hideError('err-con-subject'); markValid(this); }
+    });
+    document.getElementById('con-message').addEventListener('blur', function() {
+      if (this.value.trim().length < 20) { showError('err-con-msg','Message must be at least 20 characters.'); markInvalid(this); }
+      else { hideError('err-con-msg'); markValid(this); }
+    });
+
+    // Form submit: validate then build mailto link
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let valid = true;
+
+      const fn = document.getElementById('con-first-name');
+      const ln = document.getElementById('con-last-name');
+      const em = document.getElementById('con-email');
+      const ph = document.getElementById('con-phone');
+      const mt = document.getElementById('con-message-type');
+      const sub = document.getElementById('con-subject');
+      const msg = document.getElementById('con-message');
+      const consent = document.getElementById('con-consent');
+
+      if (fn.value.trim().length < 2) { showError('err-con-fn','First name must be at least 2 characters.'); markInvalid(fn); valid = false; } else { hideError('err-con-fn'); markValid(fn); }
+      if (ln.value.trim().length < 2) { showError('err-con-ln','Last name must be at least 2 characters.'); markInvalid(ln); valid = false; } else { hideError('err-con-ln'); markValid(ln); }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)) { showError('err-con-email','Please enter a valid email address.'); markInvalid(em); valid = false; } else { hideError('err-con-email'); markValid(em); }
+      if (ph.value && !/^[0-9+\s()-]{10,15}$/.test(ph.value)) { showError('err-con-phone','Phone must be 10–15 digits if provided.'); markInvalid(ph); valid = false; } else { hideError('err-con-phone'); }
+      if (!mt.value) { showError('err-con-type','Please select a message type.'); markInvalid(mt); valid = false; } else { hideError('err-con-type'); markValid(mt); }
+      if (sub.value.trim().length < 5) { showError('err-con-subject','Subject must be at least 5 characters.'); markInvalid(sub); valid = false; } else { hideError('err-con-subject'); markValid(sub); }
+      if (msg.value.trim().length < 20) { showError('err-con-msg','Message must be at least 20 characters.'); markInvalid(msg); valid = false; } else { hideError('err-con-msg'); markValid(msg); }
+      if (!consent.checked) { showError('err-con-consent','Consent is required to proceed.'); markInvalid(consent); valid = false; } else { hideError('err-con-consent'); markValid(consent); }
+
+      if (!valid) { form.querySelector('.invalid')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+
+      // Get recipient
+      const recipient = [...document.querySelectorAll('[name="recipient"]')].find(r => r.checked)?.value || 'info@youthtechskillshub.org.za';
+      const fullName = fn.value.trim() + ' ' + ln.value.trim();
+      const phone = ph.value.trim() ? `\nPhone: ${ph.value.trim()}` : '';
+
+      // Compose email body
+      const emailBody = `Dear YouthTech Skills Hub Team,\n\nMessage Type: ${mt.value}\n\n${msg.value.trim()}\n\n---\nSender Details:\nName: ${fullName}\nEmail: ${em.value.trim()}${phone}\n\nSent via the YouthTech Skills Hub contact form.`;
+
+      // Build mailto link
+      const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent('[Website] ' + sub.value.trim())}&body=${encodeURIComponent(emailBody)}`;
+
+      // Show preview
+      document.getElementById('prev-to').textContent = recipient;
+      document.getElementById('prev-from').textContent = `${fullName} <${em.value.trim()}>`;
+      document.getElementById('prev-subject').textContent = '[Website] ' + sub.value.trim();
+      document.getElementById('prev-message').textContent = emailBody;
+      document.getElementById('send-email-link').href = mailtoLink;
+      document.getElementById('email-preview').style.display = 'block';
+      document.getElementById('email-preview').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // Fade-in on scroll
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+    }, { threshold: 0.08 });
+    document.querySelectorAll('section, fieldset, article').forEach(el => { el.classList.add('fade-in'); obs.observe(el); });
+  </script>
+
+</body>
+</html>

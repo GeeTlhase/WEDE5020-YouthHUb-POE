@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Free digital learning resources from YouthTech Skills Hub — guides, toolkits, e-books, blog posts and industry insights to support your digital journey.">
+  <meta name="keywords" content="free learning resources, digital guides, HTML CSS guide, Python ebook, cybersecurity handbook, South Africa">
+  <meta name="robots" content="index, follow">
+
+  <title>YouthTech Skills Hub | Resources</title>
+</head>
+<body>
+
+  <!-- Navigation bar. -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">YouthTech Skills Hub</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <div class="search">
+        <input type="search" placeholder="Search resources...">
+        <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header. -->
+    <section id="page-header">
+      <h1>Resources</h1>
+      <p>Free learning materials, industry insights, and community updates to support your digital journey.</p>
+    </section>
+
+    <!-- Resources Navigation Tabs. -->
+    <section id="resource-tabs">
+      <ul>
+        <li><a href="#digital-library">Digital Library</a></li>
+        <li><a href="#blog">Blog &amp; News</a></li>
+      </ul>
+    </section>
+
+    <!-- Digital Library -->
+    <section id="digital-library">
+      <h2>Digital Library</h2>
+      <p>Browse our collection of free guides, toolkits, templates, and reference documents. All resources are available to current students and the wider community.</p>
+      <div class="filter-bar">
+        <input type="search" id="resource-search" placeholder="Search resources..." aria-label="Search resources">
+        <select id="resource-type-filter" aria-label="Filter by type">
+          <option value="">All Types</option>
+          <option value="guide">Guide</option>
+          <option value="toolkit">Toolkit</option>
+          <option value="e-book">E-Book</option>
+          <option value="template">Template</option>
+          <option value="handbook">Handbook</option>
+        </select>
+      </div>
+      <div class="library-grid" id="library-grid">
+
+        <article class="resource-item">
+          <h3>Beginner's Guide to HTML &amp; CSS</h3>
+          <p class="resource-type">Guide | PDF</p>
+          <p>A step-by-step introduction to building your first web page using HTML and CSS. Perfect for complete beginners.</p>
+          <a href="resources/html-css-beginners-guide.pdf" download>Download Guide</a>
+        </article>
+
+        <article class="resource-item">
+          <h3>Digital Marketing Toolkit 2025</h3>
+          <p class="resource-type">Toolkit | PDF</p>
+          <p>Practical templates, checklists, and strategy frameworks for planning and running effective digital marketing campaigns.</p>
+          <a href="resources/digital-marketing-toolkit-2025.pdf" download>Download Toolkit</a>
+        </article>
+
+        <article class="resource-item">
+          <h3>Introduction to Python for Data Analysis</h3>
+          <p class="resource-type">E-Book | PDF</p>
+          <p>A learner-friendly introduction to Python programming with a focus on data manipulation and visualisation.</p>
+          <a href="resources/python-data-analysis-intro.pdf" download>Download E-Book</a>
+        </article>
+
+        <article class="resource-item">
+          <h3>CV Writing for the Tech Industry</h3>
+          <p class="resource-type">Template | DOCX</p>
+          <p>A customisable CV template and writing guide tailored specifically for entry-level roles in the South African tech sector.</p>
+          <a href="resources/cv-template-tech.docx" download>Download Template</a>
+        </article>
+
+        <article class="resource-item">
+          <h3>Cybersecurity Awareness Handbook</h3>
+          <p class="resource-type">Handbook | PDF</p>
+          <p>Essential reading for anyone working online. Covers common threats, safe practices, and how to protect your personal data.</p>
+          <a href="resources/cybersecurity-handbook.pdf" download>Download Handbook</a>
+        </article>
+
+        <article class="resource-item">
+          <h3>Freelancing in the Digital Economy</h3>
+          <p class="resource-type">Guide | PDF</p>
+          <p>Everything you need to know to start and grow a freelance career in South Africa, from finding clients to managing payments.</p>
+          <a href="resources/freelancing-guide.pdf" download>Download Guide</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Blog & News — dynamically loaded via JS (Part 3) -->
+    <section id="blog">
+      <h2>Blog &amp; News</h2>
+      <p>Stay up to date with industry trends, organisation news, and inspiring stories from our community.</p>
+      <div class="filter-bar">
+        <input type="search" id="blog-search" placeholder="Search blog posts..." aria-label="Search blog posts">
+        <select id="blog-category" aria-label="Filter by category">
+          <option value="">All Categories</option>
+          <option value="industry">Industry</option>
+          <option value="success">Success Stories</option>
+          <option value="tips">Tips &amp; Tools</option>
+          <option value="news">News</option>
+        </select>
+      </div>
+      <div id="blog-container" class="dynamic-posts-grid"></div>
+      <button class="load-more-btn" id="load-more-btn">Load More Posts</button>
+    </section>
+
+    <!-- Subscribe / Newsletter  -->
+    <section id="newsletter">
+      <h2>Stay in the Loop</h2>
+      <p>Subscribe to our newsletter to receive new resources, blog posts, and programme announcements directly to your inbox.</p>
+      <form action="#" method="post">
+        <label for="newsletter-email">Email Address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@youthtechskillshub.org.za</p>
+      <p>Phone: +27 64 471 0729</p>
+      <p>Address: 14 Albert Street, Johannesburg, Gauteng, South Africa</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2025 YouthTech Skills Hub. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lightbox-close" aria-label="Close image viewer">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <!-- Part 3: Dynamic blog, search filter, lightbox JS -->
+  <script>
+    // ── Blog data ──────────────────────────────────────────────
+    const allPosts = [
+      { title: "Why Digital Skills Are the New Currency in South Africa's Job Market", date: "15 March 2025", author: "Nomsa Dlamini", category: "industry", excerpt: "South Africa's unemployment crisis is well-documented, but what is less discussed is the role that digital skills training can play in reversing this trend. We explore data from recent industry reports and what it means for young job seekers." },
+      { title: "Meet Lerato: From Unemployed Graduate to Junior Developer in 12 Weeks", date: "28 February 2025", author: "Kagiso Sithole", category: "success", excerpt: "Lerato Molefe had just finished her matric with no idea where to start. After completing the Web Development Fundamentals programme, she secured a junior developer role within three months of graduating." },
+      { title: "5 Free Online Tools Every Aspiring Digital Marketer Should Know", date: "10 February 2025", author: "Priya Naidoo", category: "tips", excerpt: "You do not need a big budget to build your digital marketing skills. Here are five powerful, free tools that our instructors recommend to every student in our Digital Marketing Essentials programme." },
+      { title: "YouthTech Skills Hub Announces New Partnership with Gauteng Tech Initiative", date: "22 January 2025", author: "Thabo Nkosi", category: "news", excerpt: "We are thrilled to announce a new collaboration that will expand our reach to an additional 200 learners across Gauteng in 2025. Read our Executive Director's full statement on what this partnership means." },
+      { title: "How to Land Your First IT Job Without Experience", date: "5 January 2025", author: "Junior Mogadime", category: "tips", excerpt: "Breaking into the IT industry without prior experience can feel daunting. In this post, our Lead Instructor shares the practical steps our graduates have used to secure their first roles." },
+      { title: "From the Community: How YouthTech Changed My Life in Soweto", date: "12 December 2024", author: "Unathi Sithole", category: "success", excerpt: "Meet Sibongile, a 24-year-old from Soweto who completed our IT Support programme and now works at a local municipality. Her story is a testament to what becomes possible when opportunity meets determination." },
+      { title: "The Growing Demand for Data Skills in South Africa", date: "3 December 2024", author: "Nomsa Dlamini", category: "industry", excerpt: "Across finance, healthcare, government, and retail, the demand for data-literate professionals is outpacing supply. We look at what this means for young South Africans and how to get ahead of the curve." },
+      { title: "YouthTech Graduates at 2024 Digital Skills Expo", date: "18 November 2024", author: "Aotlotlwe Monei", category: "news", excerpt: "Eight of our graduates showcased their portfolios at the 2024 Digital Skills Expo in Johannesburg, drawing interest from several corporate recruiters. Read the full recap of the event." }
+    ];
+
+    let visibleCount = 0;
+    const PAGE_SIZE = 4;
+    let filtered = [...allPosts];
+
+    function renderPosts(posts, append = false) {
+      const container = document.getElementById('blog-container');
+      if (!append) container.innerHTML = '';
+      const slice = posts.slice(visibleCount, visibleCount + PAGE_SIZE);
+      slice.forEach(post => {
+        const el = document.createElement('article');
+        el.className = 'blog-post fade-in';
+        el.innerHTML = `
+          <header>
+            <h3>${post.title}</h3>
+            <p class="post-meta">Posted on ${post.date} | By ${post.author}
+              <span style="margin-left:0.5rem;background:var(--clr-accent);color:var(--clr-dark);font-size:0.75rem;padding:2px 8px;border-radius:3px;font-weight:700;">${post.category}</span>
+            </p>
+          </header>
+          <p>${post.excerpt}</p>
+          <a href="#">Read More</a>`;
+        container.appendChild(el);
+        requestAnimationFrame(() => el.classList.add('visible'));
+      });
+      visibleCount += slice.length;
+      document.getElementById('load-more-btn').style.display =
+        visibleCount >= posts.length ? 'none' : 'block';
+    }
+
+    function applyBlogFilter() {
+      const q = document.getElementById('blog-search').value.toLowerCase();
+      const cat = document.getElementById('blog-category').value;
+      filtered = allPosts.filter(p =>
+        p.title.toLowerCase().includes(q) &&
+        (!cat || p.category === cat)
+      );
+      visibleCount = 0;
+      renderPosts(filtered);
+    }
+
+    document.getElementById('blog-search').addEventListener('input', applyBlogFilter);
+    document.getElementById('blog-category').addEventListener('change', applyBlogFilter);
+    document.getElementById('load-more-btn').addEventListener('click', () => renderPosts(filtered, true));
+
+    // Initial render
+    renderPosts(allPosts);
+
+    // ── Digital Library search filter ──────────────────────────
+    document.getElementById('resource-search').addEventListener('input', filterLibrary);
+    document.getElementById('resource-type-filter').addEventListener('change', filterLibrary);
+
+    function filterLibrary() {
+      const q = document.getElementById('resource-search').value.toLowerCase();
+      const type = document.getElementById('resource-type-filter').value.toLowerCase();
+      document.querySelectorAll('#library-grid .resource-item').forEach(item => {
+        const name = item.querySelector('h3').textContent.toLowerCase();
+        const resType = item.querySelector('.resource-type').textContent.toLowerCase();
+        const matchQ = name.includes(q);
+        const matchT = !type || resType.includes(type);
+        item.style.display = matchQ && matchT ? '' : 'none';
+      });
+    }
+
+    // ── Lightbox ───────────────────────────────────────────────
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+      img.addEventListener('click', () => {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox-img').alt = img.alt;
+        document.getElementById('lightbox-caption').textContent = img.dataset.caption || img.alt;
+        document.getElementById('lightbox-overlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox-overlay').addEventListener('click', e => {
+      if (e.target === document.getElementById('lightbox-overlay')) closeLightbox();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+    function closeLightbox() {
+      document.getElementById('lightbox-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // ── Fade-in on scroll ──────────────────────────────────────
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+    }, { threshold: 0.1 });
+    document.querySelectorAll('section').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

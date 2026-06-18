@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Apply for a YouthTech Skills Hub digital skills programme. Complete your online application today and take the first step towards a digital career.">
+  <meta name="keywords" content="register, apply, digital skills application, enrol, youth programme, South Africa">
+  <meta name="robots" content="index, follow">
+
+  <title>YouthTech Skills Hub | Register</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">YouthTech Skills Hub</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <div class="search">
+        <input type="search" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section id="page-header">
+      <h1>Register for a Programme</h1>
+      <p>Apply online in minutes. Start your digital skills journey with YouthTech Skills Hub today.</p>
+    </section>
+
+    <!-- How to Apply -->
+    <section id="how-to-apply">
+      <h2>How to Apply</h2>
+      <ol>
+        <li><strong>Complete the application form</strong> below with your personal details and chosen programme.</li>
+        <li><strong>Submit your application</strong> — you will receive a confirmation email within 24 hours.</li>
+        <li><strong>Attend an intake assessment</strong> — a short online or in-person session to confirm your eligibility and placement.</li>
+        <li><strong>Receive your acceptance letter</strong> and enrolment instructions ahead of your start date.</li>
+      </ol>
+    </section>
+
+    <!-- Eligibility Reminder -->
+    <section id="eligibility">
+      <h2>Eligibility Requirements</h2>
+      <ul>
+        <li>South African citizen or permanent resident</li>
+        <li>Aged 18 to 35 years</li>
+        <li>Minimum Grade 10 (or equivalent) qualification</li>
+        <li>Basic English literacy</li>
+        <li>Access to a computer or mobile device (loaner devices are available — indicate this on the form)</li>
+      </ul>
+      <p>If you are unsure whether you qualify, please contact us at <a href="mailto:info@youthtechskillshub.org.za">info@youthtechskillshub.org.za</a> before applying.</p>
+    </section>
+
+    <!-- Online Application Form -->
+    <section id="application-form">
+      <h2>Online Application Form</h2>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <div class="form-group">
+            <label for="first-name">First Name <span aria-label="required">*</span></label>
+            <input type="text" id="first-name" name="first_name" placeholder="e.g. Lerato" required>
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name <span aria-label="required">*</span></label>
+            <input type="text" id="last-name" name="last_name" placeholder="e.g. Molefe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="id-number">South African ID Number <span aria-label="required">*</span></label>
+            <input type="text" id="id-number" name="id_number" placeholder="13-digit ID number" maxlength="13" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth <span aria-label="required">*</span></label>
+            <input type="date" id="dob" name="date_of_birth" required>
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="">-- Select --</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="non-binary">Non-binary</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="province">Province <span aria-label="required">*</span></label>
+            <select id="province" name="province" required>
+              <option value="">-- Select Province --</option>
+              <option value="gauteng">Gauteng</option>
+              <option value="western-cape">Western Cape</option>
+              <option value="kwazulu-natal">KwaZulu-Natal</option>
+              <option value="eastern-cape">Eastern Cape</option>
+              <option value="limpopo">Limpopo</option>
+              <option value="mpumalanga">Mpumalanga</option>
+              <option value="north-west">North West</option>
+              <option value="free-state">Free State</option>
+              <option value="northern-cape">Northern Cape</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Contact Details -->
+        <fieldset>
+          <legend>Contact Details</legend>
+
+          <div class="form-group">
+            <label for="email">Email Address <span aria-label="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Cell Phone Number <span aria-label="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 071 234 5678" required>
+          </div>
+        </fieldset>
+
+        <!-- Programme Selection -->
+        <fieldset>
+          <legend>Programme Selection</legend>
+
+          <div class="form-group">
+            <label for="programme">Choose a Programme <span aria-label="required">*</span></label>
+            <select id="programme" name="programme" required>
+              <option value="">-- Select a Programme --</option>
+              <option value="web-dev">Web Development Fundamentals</option>
+              <option value="digital-marketing">Digital Marketing Essentials</option>
+              <option value="data-analysis">Data Analysis with Excel and Python</option>
+              <option value="it-support">IT Support and Networking Basics</option>
+              <option value="graphic-design">Graphic Design for Digital Media</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="intake">Preferred Intake Date <span aria-label="required">*</span></label>
+            <select id="intake" name="intake" required>
+              <option value="">-- Select an Intake --</option>
+              <option value="aug-2025">August 2025</option>
+              <option value="sep-2025">September 2025</option>
+              <option value="nov-2025">November 2025</option>
+              <option value="feb-2026">February 2026</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mode">Preferred Learning Mode <span aria-label="required">*</span></label>
+            <select id="mode" name="mode" required>
+              <option value="">-- Select --</option>
+              <option value="in-person">In-Person</option>
+              <option value="online">Online</option>
+              <option value="either">Either (no preference)</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Education & Background -->
+        <fieldset>
+          <legend>Education &amp; Background</legend>
+
+          <div class="form-group">
+            <label for="education">Highest Level of Education <span aria-label="required">*</span></label>
+            <select id="education" name="education" required>
+              <option value="">-- Select --</option>
+              <option value="grade-10">Grade 10</option>
+              <option value="grade-11">Grade 11</option>
+              <option value="matric">Matric (Grade 12)</option>
+              <option value="certificate">Certificate / Diploma</option>
+              <option value="degree">Undergraduate Degree</option>
+              <option value="postgrad">Postgraduate Degree</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="employment-status">Current Employment Status</label>
+            <select id="employment-status" name="employment_status">
+              <option value="">-- Select --</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="part-time">Part-time employed</option>
+              <option value="full-time">Full-time employed</option>
+              <option value="self-employed">Self-employed / Freelancing</option>
+              <option value="student">Full-time student</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="device-access">Do you have access to a computer or mobile device?</label>
+            <select id="device-access" name="device_access">
+              <option value="">-- Select --</option>
+              <option value="yes">Yes</option>
+              <option value="no-need-loaner">No – I would need a loaner device</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Supporting Documents -->
+        <fieldset>
+          <legend>Supporting Documents</legend>
+          <p>Please upload copies of the following documents (PDF or image, max 5MB each):</p>
+
+          <div class="form-group">
+            <label for="id-upload">Copy of South African ID or Passport <span aria-label="required">*</span></label>
+            <input type="file" id="id-upload" name="id_document" accept=".pdf,.jpg,.jpeg,.png" required>
+          </div>
+
+          <div class="form-group">
+            <label for="qualification-upload">Proof of Highest Qualification <span aria-label="required">*</span></label>
+            <input type="file" id="qualification-upload" name="qualification_document" accept=".pdf,.jpg,.jpeg,.png" required>
+          </div>
+        </fieldset>
+
+        <!-- Additional Information -->
+        <fieldset>
+          <legend>Additional Information</legend>
+          <div class="form-group">
+            <label for="motivation">Why do you want to join this programme?</label>
+            <textarea id="motivation" name="motivation" rows="5" placeholder="Tell us a little about yourself and your goals (optional)..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="how-heard">How did you hear about us?</label>
+            <select id="how-heard" name="how_heard">
+              <option value="">-- Select --</option>
+              <option value="social-media">Social Media</option>
+              <option value="friend-family">Friend or Family</option>
+              <option value="school">School or University</option>
+              <option value="community-centre">Community Centre</option>
+              <option value="online-search">Online Search</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Consent -->
+        <fieldset>
+          <legend>Consent &amp; Declaration</legend>
+
+          <div class="form-group">
+            <input type="checkbox" id="consent-data" name="consent_data" required>
+            <label for="consent-data">I consent to YouthTech Skills Hub processing my personal information for the purposes of my application and enrolment, in accordance with the Protection of Personal Information Act (POPIA). <span aria-label="required">*</span></label>
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" id="consent-terms" name="consent_terms" required>
+            <label for="consent-terms">I confirm that all information provided in this application is accurate and complete. <span aria-label="required">*</span></label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Submit Application</button>
+          <button type="reset">Clear Form</button>
+        </div>
+        <div class="form-success-msg" id="reg-success">
+          &#10003; Your application has been submitted successfully! You will receive a confirmation email within 24 hours.
+        </div>
+
+      </form>
+    </section>
+
+    <!-- Student Login -->
+    <section id="student-login">
+      <h2>Existing Student? Log In Here</h2>
+      <p>Already enrolled? Access your student portal to view course materials, track your progress, and manage your profile.</p>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" name="login_email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="login_password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit">Log In</button>
+        <a href="#">Forgot your password?</a>
+      </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Need Help?</h2>
+      <p>If you have any questions about your application or are experiencing difficulties with this form, please contact our admissions team:</p>
+      <p>Email: <a href="mailto:admissions@youthtechskillshub.org.za">admissions@youthtechskillshub.org.za</a></p>
+      <p>Phone: +27 73 769 7562 (Monday – Friday, 08:00 – 17:00)</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programme.html">Programmes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@youthtechskillshub.org.za</p>
+      <p>Phone: +27 64 471 0729</p>
+      <p>Address: 14 Albert Street, Johannesburg, Gauteng, South Africa</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2025 YouthTech Skills Hub. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Part 3: JS form validation + AJAX submission -->
+  <script>
+    const form = document.querySelector('#application-form form');
+
+    // Helper: show/hide error
+    function setError(input, msg) {
+      input.classList.add('invalid');
+      input.classList.remove('valid');
+      let err = input.parentElement.querySelector('.field-error');
+      if (!err) {
+        err = document.createElement('span');
+        err.className = 'field-error';
+        input.parentElement.appendChild(err);
+      }
+      err.textContent = msg;
+      err.classList.add('visible');
+    }
+    function clearError(input) {
+      input.classList.remove('invalid');
+      input.classList.add('valid');
+      const err = input.parentElement.querySelector('.field-error');
+      if (err) err.classList.remove('visible');
+    }
+
+    // Validators
+    const validators = {
+      'first_name':    v => v.trim().length >= 2  ? '' : 'First name must be at least 2 characters.',
+      'last_name':     v => v.trim().length >= 2  ? '' : 'Last name must be at least 2 characters.',
+      'id_number':     v => /^\d{13}$/.test(v)   ? '' : 'ID number must be exactly 13 digits.',
+      'date_of_birth': v => {
+        if (!v) return 'Date of birth is required.';
+        const dob = new Date(v), now = new Date();
+        const age = (now - dob) / (1000*60*60*24*365.25);
+        return age >= 18 && age <= 35 ? '' : 'Applicant must be between 18 and 35 years old.';
+      },
+      'province':  v => v ? '' : 'Please select your province.',
+      'email':     v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? '' : 'Please enter a valid email address.',
+      'phone':     v => /^[0-9+\s()-]{10,15}$/.test(v) ? '' : 'Please enter a valid phone number (10–15 digits).',
+      'programme': v => v ? '' : 'Please select a programme.',
+      'intake':    v => v ? '' : 'Please select an intake date.',
+      'mode':      v => v ? '' : 'Please select a learning mode.',
+      'education': v => v ? '' : 'Please select your education level.',
+    };
+
+    // Live validation
+    Object.keys(validators).forEach(name => {
+      const input = form.querySelector(`[name="${name}"]`);
+      if (!input) return;
+      input.addEventListener('blur', () => {
+        const err = validators[name](input.value);
+        err ? setError(input, err) : clearError(input);
+      });
+    });
+
+    // AJAX-style submission
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let valid = true;
+      Object.keys(validators).forEach(name => {
+        const input = form.querySelector(`[name="${name}"]`);
+        if (!input) return;
+        const err = validators[name](input.value);
+        if (err) { setError(input, err); valid = false; }
+        else clearError(input);
+      });
+      // Check consent checkboxes
+      ['consent_data','consent_terms'].forEach(name => {
+        const cb = form.querySelector(`[name="${name}"]`);
+        if (cb && !cb.checked) {
+          setError(cb, 'This consent is required to proceed.');
+          valid = false;
+        } else if (cb) { clearError(cb); }
+      });
+      if (!valid) {
+        form.querySelector('.invalid')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      // Simulate AJAX submission
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Submitting…';
+      btn.disabled = true;
+      setTimeout(() => {
+        const msg = document.getElementById('reg-success');
+        if (msg) { msg.classList.add('visible'); }
+        form.reset();
+        form.querySelectorAll('.valid').forEach(el => el.classList.remove('valid'));
+        btn.textContent = 'Submit Application';
+        btn.disabled = false;
+        msg?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 1200);
+    });
+
+    // Student login validation
+    const loginForm = document.querySelector('#student-login form');
+    if (loginForm) {
+      loginForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = loginForm.querySelector('[name="login_email"]');
+        const pass  = loginForm.querySelector('[name="login_password"]');
+        let ok = true;
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) { setError(email, 'Please enter a valid email.'); ok = false; } else clearError(email);
+        if (pass.value.length < 6) { setError(pass, 'Password must be at least 6 characters.'); ok = false; } else clearError(pass);
+        if (ok) alert('Login submitted. (Demo only — no back-end connected.)');
+      });
+    }
+  </script>
+</body>
+</html>
