@@ -9,7 +9,7 @@ https://geetlhase.github.io/WEDE5020-YouthHUb-POE/
 ## GitHub Repository
 
 
-
+https://github.com/GeeTlhase/WEDE5020-YouthHUb-POE
 ---
 
 ## Project Structure
